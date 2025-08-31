@@ -1,0 +1,355 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-09-01T02:09:15.966151",
+    "analysis_type": "RAG_Enhanced_Trading_Analysis",
+    "claude_model": "claude-sonnet-4-20250514",
+    "knowledge_base_docs_used": 6
+  },
+  "csv_data_analysis": {
+    "metadata": {
+      "total_trades": 5,
+      "columns": [
+        "Trade_Num",
+        "Symbol",
+        "Type",
+        "Entry_Date",
+        "Entry_Price",
+        "Exit_Date",
+        "Exit_Price",
+        "Shares",
+        "Entry_Value",
+        "Exit_Value",
+        "Net_PnL",
+        "PnL_Percent",
+        "Days_Held",
+        "Entry_Signal_Strength",
+        "Exit_Signal",
+        "Exit_Signal_Strength",
+        "Cash_After",
+        "Exit_Condition"
+      ],
+      "file_analyzed": "2025-09-01T02:08:34.568027",
+      "data_shape": [
+        5,
+        18
+      ]
+    },
+    "column_classification": {
+      "pnl_columns": [
+        "Net_PnL",
+        "PnL_Percent"
+      ],
+      "date_columns": [
+        "Entry_Date",
+        "Entry_Price",
+        "Exit_Date",
+        "Exit_Price",
+        "Entry_Value",
+        "Exit_Value",
+        "Entry_Signal_Strength",
+        "Exit_Signal",
+        "Exit_Signal_Strength",
+        "Exit_Condition"
+      ],
+      "price_columns": [
+        "Entry_Date",
+        "Entry_Price",
+        "Exit_Date",
+        "Exit_Price",
+        "Entry_Value",
+        "Exit_Value",
+        "Entry_Signal_Strength",
+        "Exit_Signal",
+        "Exit_Signal_Strength",
+        "Exit_Condition"
+      ],
+      "volume_columns": [
+        "Shares"
+      ]
+    },
+    "trading_metrics": {
+      "total_pnl": -2771.679999999993,
+      "avg_pnl_per_trade": -554.3359999999986,
+      "median_pnl": -172.9799999999985,
+      "pnl_std": 1159.9449070020523,
+      "win_rate": 40.0,
+      "loss_rate": 60.0,
+      "avg_winner": 367.35000000000167,
+      "avg_loser": -1168.7933333333322,
+      "largest_winner": 631.390000000002,
+      "largest_loser": -2346.149999999998,
+      "total_winners": 2,
+      "total_losers": 3,
+      "profit_factor": 0.20953233819494865,
+      "sharpe_ratio": -0.4778985593658181,
+      "sortino_ratio": -0.5049055115904544
+    },
+    "risk_metrics": {
+      "max_drawdown": -3506.3799999999965,
+      "max_drawdown_pct": -3394.037363275532,
+      "avg_drawdown": -1928.6449999999968,
+      "recovery_factor": -0.7904676618050513,
+      "calmar_ratio": -0.7904676618050513
+    },
+    "streak_analysis": {
+      "max_consecutive_losses": 3,
+      "avg_consecutive_losses": 3.0,
+      "total_loss_streaks": 1
+    },
+    "statistical_summary": {
+      "Trade_Num": {
+        "count": 5,
+        "mean": 3.0,
+        "std": 1.5811388300841898,
+        "min": 1.0,
+        "max": 5.0,
+        "skewness": 0.0,
+        "kurtosis": -1.2000000000000002
+      },
+      "Entry_Price": {
+        "count": 5,
+        "mean": 137.562,
+        "std": 208.31769168748005,
+        "min": 11.41,
+        "max": 504.06,
+        "skewness": 2.061321371755603,
+        "kurtosis": 4.329530770989045
+      },
+      "Exit_Price": {
+        "count": 5,
+        "mean": 138.776,
+        "std": 208.88294959139196,
+        "min": 11.12,
+        "max": 506.25,
+        "skewness": 2.0604659570628714,
+        "kurtosis": 4.329214613232848
+      },
+      "Shares": {
+        "count": 5,
+        "mean": 927.6,
+        "std": 951.5996006724678,
+        "min": 49.0,
+        "max": 2191.0,
+        "skewness": 0.6538442841705818,
+        "kurtosis": -2.2975026186932075
+      },
+      "Entry_Value": {
+        "count": 5,
+        "mean": 24927.128,
+        "std": 127.99225160141602,
+        "min": 24698.94,
+        "max": 24999.31,
+        "skewness": -2.1982238672546957,
+        "kurtosis": 4.867824938158588
+      },
+      "Exit_Value": {
+        "count": 5,
+        "mean": 25520.388,
+        "std": 1168.304060495384,
+        "min": 24363.92,
+        "max": 27330.7,
+        "skewness": 1.0587737967987687,
+        "kurtosis": 0.6191990104114282
+      },
+      "Net_PnL": {
+        "count": 5,
+        "mean": -554.3359999999986,
+        "std": 1159.9449070020523,
+        "min": -2346.149999999998,
+        "max": 631.390000000002,
+        "skewness": -1.0217192342395296,
+        "kurtosis": 0.6504872284615342
+      },
+      "PnL_Percent": {
+        "count": 5,
+        "mean": -2.218105163347128,
+        "std": 4.642473514923198,
+        "min": -9.388900116253234,
+        "max": 2.525629707379932,
+        "skewness": -1.0215941585221295,
+        "kurtosis": 0.646731354711438
+      },
+      "Days_Held": {
+        "count": 5,
+        "mean": 3.2,
+        "std": 1.3038404810405297,
+        "min": 1.0,
+        "max": 4.0,
+        "skewness": -1.71439232801177,
+        "kurtosis": 2.6643598615917004
+      },
+      "Entry_Signal_Strength": {
+        "count": 5,
+        "mean": -0.12317860519999999,
+        "std": 0.13214137928967642,
+        "min": -0.259701871,
+        "max": 0.016982527,
+        "skewness": -0.05776783989435239,
+        "kurtosis": -2.9428069636499954
+      },
+      "Exit_Signal_Strength": {
+        "count": 1,
+        "mean": -0.060512334,
+        "std": NaN,
+        "min": -0.060512334,
+        "max": -0.060512334,
+        "skewness": NaN,
+        "kurtosis": NaN
+      },
+      "Cash_After": {
+        "count": 5,
+        "mean": 52634.891,
+        "std": 5590.015655059026,
+        "min": 50134.96,
+        "max": 62634.615,
+        "skewness": 2.236067977499785,
+        "kurtosis": 4.999999999999972
+      }
+    },
+    "sample_data": [
+      {
+        "Trade_Num": 1,
+        "Symbol": "MSFT",
+        "Type": "LONG",
+        "Entry_Date": "2025-08-26 09:30:00",
+        "Entry_Price": 504.06,
+        "Exit_Date": "2025-08-29 09:30:00",
+        "Exit_Price": 506.25,
+        "Shares": 49,
+        "Entry_Value": 24698.94,
+        "Exit_Value": 24806.25,
+        "Net_PnL": 103.31000000000132,
+        "PnL_Percent": 0.4182770596632945,
+        "Days_Held": 3,
+        "Entry_Signal_Strength": 0.016982527,
+        "Exit_Signal": "SELL",
+        "Exit_Signal_Strength": -0.060512334,
+        "Cash_After": 62634.615,
+        "Exit_Condition": "Closed"
+      },
+      {
+        "Trade_Num": 2,
+        "Symbol": "TWLO",
+        "Type": "SHORT",
+        "Entry_Date": "2025-08-26 09:30:00",
+        "Entry_Price": 104.93,
+        "Exit_Date": NaN,
+        "Exit_Price": 105.64,
+        "Shares": 238,
+        "Entry_Value": 24973.34,
+        "Exit_Value": 25142.32,
+        "Net_PnL": -172.9799999999985,
+        "PnL_Percent": -0.6926586511856183,
+        "Days_Held": 4,
+        "Entry_Signal_Strength": -0.115602694,
+        "Exit_Signal": "OPEN",
+        "Exit_Signal_Strength": NaN,
+        "Cash_After": 50134.96,
+        "Exit_Condition": "OPEN"
+      },
+      {
+        "Trade_Num": 3,
+        "Symbol": "TTD",
+        "Type": "SHORT",
+        "Entry_Date": "2025-08-26 09:30:00",
+        "Entry_Price": 52.58,
+        "Exit_Date": NaN,
+        "Exit_Price": 54.65,
+        "Shares": 475,
+        "Entry_Value": 24975.5,
+        "Exit_Value": 25958.75,
+        "Net_PnL": -987.25,
+        "PnL_Percent": -3.9528738163400137,
+        "Days_Held": 4,
+        "Entry_Signal_Strength": -0.003403353,
+        "Exit_Signal": "OPEN",
+        "Exit_Signal_Strength": NaN,
+        "Cash_After": 50134.96,
+        "Exit_Condition": "OPEN"
+      },
+      {
+        "Trade_Num": 4,
+        "Symbol": "RGTI",
+        "Type": "SHORT",
+        "Entry_Date": "2025-08-26 09:30:00",
+        "Entry_Price": 14.83,
+        "Exit_Date": NaN,
+        "Exit_Price": 16.22,
+        "Shares": 1685,
+        "Entry_Value": 24988.55,
+        "Exit_Value": 27330.7,
+        "Net_PnL": -2346.149999999998,
+        "PnL_Percent": -9.388900116253234,
+        "Days_Held": 4,
+        "Entry_Signal_Strength": -0.254167635,
+        "Exit_Signal": "OPEN",
+        "Exit_Signal_Strength": NaN,
+        "Cash_After": 50134.96,
+        "Exit_Condition": "OPEN"
+      },
+      {
+        "Trade_Num": 5,
+        "Symbol": "PATH",
+        "Type": "SHORT",
+        "Entry_Date": "2025-08-29 09:30:00",
+        "Entry_Price": 11.41,
+        "Exit_Date": NaN,
+        "Exit_Price": 11.12,
+        "Shares": 2191,
+        "Entry_Value": 24999.31,
+        "Exit_Value": 24363.92,
+        "Net_PnL": 631.390000000002,
+        "PnL_Percent": 2.525629707379932,
+        "Days_Held": 1,
+        "Entry_Signal_Strength": -0.259701871,
+        "Exit_Signal": "OPEN",
+        "Exit_Signal_Strength": NaN,
+        "Cash_After": 50134.96,
+        "Exit_Condition": "OPEN"
+      }
+    ]
+  },
+  "retrieved_context": [
+    {
+      "title": "Sharpe Ratio Analysis",
+      "content": "The Sharpe ratio measures risk-adjusted returns. A Sharpe ratio above 1.0 is good, above 2.0 is excellent. \n                Formula: (Mean Return - Risk Free Rate) / Standard Deviation of Returns. \n                Values below 0.5 indicate poor risk-adjusted performance.",
+      "category": "performance_metrics",
+      "similarity_score": 0.6388837695121765
+    },
+    {
+      "title": "Profit Factor Interpretation",
+      "content": "Profit factor = Gross Profit / Gross Loss. Values above 1.5 are good, above 2.0 are excellent.\n                A profit factor below 1.0 means the strategy loses money. Values between 1.0-1.5 may be marginal after costs.",
+      "category": "performance_metrics",
+      "similarity_score": 0.5140098333358765
+    },
+    {
+      "title": "Win Rate Guidelines",
+      "content": "Win rate alone doesn't determine profitability. High-frequency strategies often need 55%+ win rates.\n                Swing trading strategies can be profitable with 40%+ win rates if winners are larger than losers.\n                The key is the relationship between win rate and average win/loss ratio.",
+      "category": "performance_metrics",
+      "similarity_score": 0.353516161441803
+    },
+    {
+      "title": "Position Sizing Rules",
+      "content": "Kelly Criterion for optimal position size: f = (bp-q)/b where b=odds, p=win probability, q=loss probability.\n                Conservative approach: Use 25-50% of Kelly fraction. Never risk more than 1-2% per trade.\n                Consider correlation between positions to avoid concentration risk.",
+      "category": "risk_management",
+      "similarity_score": 0.4179234504699707
+    },
+    {
+      "title": "Maximum Drawdown Analysis",
+      "content": "Maximum drawdown should typically not exceed 10-20% for institutional strategies, 30% for retail.\n                Drawdown duration is as important as magnitude. Strategies with long recovery periods may have psychological issues.\n                Consider the Calmar ratio: Annual Return / Maximum Drawdown.",
+      "category": "risk_management",
+      "similarity_score": 0.6183537840843201
+    },
+    {
+      "title": "Consecutive Loss Management",
+      "content": "More than 5-7 consecutive losses may indicate strategy degradation or market regime change.\n                Consider implementing stop-loss at strategy level after excessive consecutive losses.\n                Analyze if losses cluster during specific market conditions.",
+      "category": "risk_management",
+      "similarity_score": 0.3342016935348511
+    }
+  ],
+  "claude_analysis": {
+    "executive_summary": "Analysis completed but not in JSON format",
+    "full_analysis": "```json\n{\n  \"executive_summary\": \"This trading strategy shows severe underperformance with critical risk management failures. With only 5 trades, the strategy has lost $2,772 (-11.1% of capital), showing a profit factor of 0.21 (far below the 1.5+ threshold for viability) and a negative Sharpe ratio of -0.48. The strategy is currently experiencing 3 consecutive losses with 4 open positions showing unrealized losses. Immediate intervention is required.\",\n\n  \"performance_analysis\": {\n    \"overall_performance\": \"POOR - Strategy is fundamentally unprofitable\",\n    \"key_metrics_assessment\": {\n      \"profit_factor\": \"0.21 - CRITICAL: Far below 1.0 breakeven threshold, indicating gross losses are 5x larger than gross profits\",\n      \"sharpe_ratio\": \"-0.48 - POOR: Negative risk-adjusted returns, well below 0.5 minimum threshold\",\n      \"win_rate\": \"40% - MARGINAL: Could be acceptable if average winners were larger than losers, but ratio is inverted at 1:3.18\",\n      \"risk_reward_ratio\": \"INVERTED: Average loser ($1,169) is 3.18x larger than average winner ($367) - unsustainable\",\n      \"calmar_ratio\": \"-0.79 - POOR: Negative return per unit of drawdown\"\n    },\n    \"trade_distribution\": \"2 winners vs 3 losers with largest loser (-$2,346) being 3.7x larger than largest winner ($631)\"\n  },\n\n  \"risk_assessment\": {\n    \"maximum_drawdown\": \"EXCESSIVE: -$3,506 (-13.4% of starting capital) exceeds recommended 10-20% institutional limit\",\n    \"position_sizing\": \"CONCERNING: All positions sized at ~$25k (50% of capital) with no apparent risk management per trade\",\n    \"consecutive_losses\": \"WARNING: Currently at 3 consecutive losses (excluding one winner), approaching the 5-7 threshold for strategy degradation\",\n    \"concentration_risk\": \"HIGH: 4 of 5 positions are short trades, creating directional bias risk\",\n    \"open_position_risk\": \"CRITICAL: 4 open positions with combined unrealized loss of -$2,506, representing 10% of starting capital\"\n  },\n\n  \"optimization_recommendations\": {\n    \"immediate_actions\": [\n      \"Implement 1-2% risk per trade position sizing instead of fixed $25k amounts\",\n      \"Add stop-loss levels to limit individual trade losses to maximum 2-3% of capital\",\n      \"Review and potentially close open losing positions to prevent further deterioration\"\n    ],\n    \"strategy_improvements\": [\n      \"Reverse engineer why short bias is failing - consider market regime analysis\",\n      \"Implement better entry signal filtering - current entry signal strengths are mostly negative\",\n      \"Add position correlation analysis to avoid concentrated directional exposure\",\n      \"Develop exit rules for open positions rather than leaving them indefinitely open\"\n    ],\n    \"risk_management_enhancements\": [\n      \"Apply Kelly Criterion for position sizing: f = (bp-q)/b, then use 25-50% of Kelly fraction\",\n      \"Implement strategy-level stop after 5 consecutive losses\",\n      \"Add maximum portfolio heat limits (total open risk should not exceed 6-8% of capital)\"\n    ]\n  },\n\n  \"warnings_and_concerns\": {\n    \"critical_issues\": [\n      \"Strategy is in active drawdown with 80% of trades currently losing money\",\n      \"No apparent exit strategy for losing positions - 4 trades marked as 'OPEN' with mounting losses\",\n      \"Short bias may be fighting prevailing market trend\",\n      \"Sample size of 5 trades is insufficient for statistical significance\"\n    ],\n    \"operational_risks\": [\n      \"Holding period averaging 3.2 days suggests short-term strategy but with poor timing\",\n      \"Exit signals appear inconsistent - only 1 of 5 trades has exit signal strength data\",\n      \"Cash management shows declining available capital from $62,635 to $50,135\"\n    ]\n  },\n\n  \"action_items\": [\n    {\n      \"priority\": 1,\n      \"action\": \"IMMEDIATE: Review and potentially close open losing positions to prevent further losses\",\n      \"rationale\": \"Current open losses of $2,506 represent 10% of capital at risk\"\n    },\n    {\n      \"priority\": 2,\n      \"action\": \"Implement proper position sizing using 1-2% risk per trade methodology\",\n      \"rationale\": \"Current 50% capital allocation per trade creates excessive concentration risk\"\n    },\n    {\n      \"priority\": 3,\n      \"action\": \"Analyze market regime - short bias may be inappropriate for current conditions\",\n      \"rationale\": \"4 of 5 trades are shorts with 75% of short trades losing money\"\n    },\n    {\n      \"priority\": 4,\n      \"action\": \"Develop and backtest exit rules for all positions\",\n      \"rationale\": \"Lack of systematic exits is allowing losses to compound\"\n    },\n    {\n      \"priority\": 5,\n      \"action\": \"Increase sample size to minimum 30-50 trades before strategy validation\",\n      \"rationale\": \"5 trades insufficient for statistical significance of strategy performance\"\n    }\n  ],\n\n  \"confidence_level\": 9,\n  \"confidence_rationale\": \"High confidence in analysis due to clear mathematical evidence of poor performance metrics, excessive risk exposure, and violation of multiple professional trading principles. The small sample size limits some conclusions but the severity of current losses and risk exposure is unambiguous.\"\n}\n```",
+    "parsing_note": "Claude response was not valid JSON, stored as text"
+  }
+}
